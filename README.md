@@ -10,5 +10,9 @@
 - https://data.gov.in/
 - https://api.covid19india.org
 
+License
+----
+Apache-2.0
+
 
 
