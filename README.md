@@ -1,6 +1,6 @@
 ## airdelhi BOT
-- Mention u/airdelhi in Reddit comments for Delhi Pollution Status
-- Write 'covid' along with u/airdelhi in the comment for Delhi Covid-19 status
+- Mention 'u/airdelhi' in Reddit comments for Delhi Pollution Status
+- Write 'covid' or 'corona' along with u/airdelhi in the comment for Delhi Covid-19 status
 
 ## Libraries
 - [PRAW-Python Reddit API Wrapper](https://praw.readthedocs.io/en/latest/)
