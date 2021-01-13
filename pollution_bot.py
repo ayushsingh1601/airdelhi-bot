@@ -19,7 +19,7 @@ def my_listener(event):
 def killpoll():
   
   while True:
-      time.sleep(30)
+      time.sleep(45)
       reddit = praw.Reddit(client_id='CLIENT_ID',
                client_secret='CLIENT_SECRET',
                user_agent='USER_AGENT',
@@ -137,11 +137,12 @@ def killpoll():
                 try:
                   item.mark_read()
                   if "u/airdelhi" in item.body:
-                    if "covid" in item.body:
+                    if "covid" in item.body or "corona" in item.body:
                         try:
                           item.reply(covid_string)
                         except Exception as er:
                           print("COVID EXCEPTION : %s"%(er))
+                          item.mark_unread()
                     else:
                         try:
                           item.reply(string)
@@ -163,7 +164,7 @@ def killpoll():
 try:   
   sched = BlockingScheduler()
   sched.add_listener(my_listener, EVENT_JOB_ERROR | EVENT_JOB_EXECUTED)
-  @sched.scheduled_job('interval', minutes=2)
+  @sched.scheduled_job('interval', minutes=3)
   def timed_job():
       print("Scheduler Start")
       time.sleep(5)
