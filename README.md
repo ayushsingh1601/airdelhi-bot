@@ -1,5 +1,6 @@
 ## airdelhi BOT
-- Mention 'u/airdelhi' in Reddit comments for Delhi Pollution Status
+- [u/airdelhi](https://www.reddit.com/user/airdelhi)
+- Mention 'u/airdelhi' in Reddit comments for Delhi Pollution Status and add noida for its pollution status.
 - Write 'covid' or 'corona' along with u/airdelhi in the comment for Delhi Covid-19 status
 
 ## Libraries
@@ -8,7 +9,7 @@
 
 ## APIs
 - https://data.gov.in/
-- https://api.covid19india.org
+- https://covid19tracker.in/data/
 
 License
 ----
